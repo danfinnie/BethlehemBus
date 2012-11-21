@@ -1,0 +1,242 @@
+{
+	"westbount": [
+		{
+			"company": "Bieber",
+			"departureTime": "730a",
+			"departureLocation": "PABT",
+			"arrivalTime": "915a",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "830a",
+			"departureLocation": "PABT",
+			"arrivalTime": "1015a",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "1000a",
+			"departureLocation": "PABT",
+			"arrivalTime": "1145a",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "1230p",
+			"departureLocation": "PABT",
+			"arrivalTime": "215p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "100p",
+			"departureLocation": "PABT",
+			"arrivalTime": "245p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "200p",
+			"departureLocation": "PABT",
+			"arrivalTime": "345p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "300p",
+			"departureLocation": "PABT",
+			"arrivalTime": "445p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "330p",
+			"departureLocation": "PABT",
+			"arrivalTime": "515p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "400p",
+			"departureLocation": "PABT",
+			"arrivalTime": "545p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "430p",
+			"departureLocation": "PABT",
+			"arrivalTime": "615p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "500p",
+			"departureLocation": "PABT",
+			"arrivalTime": "545p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "530p",
+			"departureLocation": "PABT",
+			"arrivalTime": "715p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "600p",
+			"departureLocation": "PABT",
+			"arrivalTime": "745p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "620p",
+			"departureLocation": "PABT",
+			"arrivalTime": "800p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "650p",
+			"departureLocation": "PABT",
+			"arrivalTime": "830p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "730p",
+			"departureLocation": "PABT",
+			"arrivalTime": "915p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "830p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1015p",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "1000p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1145",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Bieber",
+			"departureTime": "1215a",
+			"departureLocation": "PABT",
+			"arrivalTime": "200a",
+			"arrivalLocation": "Hellertown"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "830a",
+			"departureLocation": "PABT",
+			"arrivalTime": "1050p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "1000a",
+			"departureLocation": "PABT",
+			"arrivalTime": "1050p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "1200p",
+			"departureLocation": "PABT",
+			"arrivalTime": "220p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "200p",
+			"departureLocation": "PABT",
+			"arrivalTime": "425p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "400p",
+			"departureLocation": "PABT",
+			"arrivalTime": "625p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "530p",
+			"departureLocation": "PABT",
+			"arrivalTime": "720p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "630p",
+			"departureLocation": "PABT",
+			"arrivalTime": "855p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "715p",
+			"departureLocation": "PABT",
+			"arrivalTime": "925p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "745p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1050p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "745p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1015p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "815p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1020p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "850p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1110p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "945p",
+			"departureLocation": "PABT",
+			"arrivalTime": "1155p",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "1130p",
+			"departureLocation": "PABT",
+			"arrivalTime": "145a",
+			"arrivalLocation": "South Bethlehem"
+		},
+		{
+			"company": "Transbridge",
+			"departureTime": "1145p",
+			"departureLocation": "PABT",
+			"arrivalTime": "135a",
+			"arrivalLocation": "South Bethlehem"
+		}
+	]
+}

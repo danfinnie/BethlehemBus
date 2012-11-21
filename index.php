@@ -114,6 +114,13 @@ for ($i = 0; $i < 2; $i++) {
 		    </tbody>
 	    </table>
 
+	    <p>
+		    <img src="img/github.png" />
+		    <a href="https://github.com/danfinnie/BethlehemBus">
+			    View on GitHub
+			</a>
+		</p>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

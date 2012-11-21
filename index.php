@@ -54,7 +54,7 @@ usort($data, function($a, $b) {
 });
 
 for ($i = 0; $i < 2; $i++) {
-	array_unshift(array_pop($data));
+	array_unshift($data, array_pop($data));
 }
 
 ?><!DOCTYPE html>

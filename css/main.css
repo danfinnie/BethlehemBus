@@ -93,8 +93,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#sorted-departures td {
+    padding: 9px;
+    border: 1px solid black;
+}
 
+#sorted-departures .past {
+    color: #ddd;
+}
 
+#sorted-departures thead {
+    font-weight: bold;
+}
+
+#sorted-departures tr:hover {
+    background-color: #ccc;
+}
+
+body {
+    margin: 20px;
+}
 
 
 

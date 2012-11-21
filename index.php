@@ -91,7 +91,7 @@ for ($i = 0; $i < 2; $i++) {
         <![endif]-->
 
         <h1>Upcoming Departures</h1>
-        <table>
+        <table id="sorted-departures">
         	<thead>
         		<tr>
     				<td>Company</td>

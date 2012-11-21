@@ -53,8 +53,9 @@ usort($data, function($a, $b) {
 	return $a->compareNextOccurence($b);
 });
 
-
-
+for ($i = 0; $i < 2; $i++) {
+	array_unshift(array_pop($data));
+}
 
 ?><!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -78,6 +79,30 @@ usort($data, function($a, $b) {
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+
+        <h1>Upcoming Departures</h1>
+        <table>
+        	<thead>
+        		<tr>
+    				<td>Company</td>
+        			<td>Departure Time</td>
+        			<td>Departure Location</td>
+        			<td>Arrival Time</td>
+        			<td>Arrival Location</td>
+        		</tr>
+        	</thead>
+        	<tbody>
+	        	<?php foreach($data as $i=>$row): ?>
+	        		<tr class="<?php echo $i < 2 ? "past" : ""?>">
+	        			<td><?= $row['company'] ?></td>
+	        			<td><?= $row['departureTime'] ?></td>
+	        			<td><?= $row['departureLocation'] ?></td>
+	        			<td><?= $row['arrivalTime'] ?></td>
+	        			<td><?= $row['arrivalLocation'] ?></td>
+	        		</tr>
+		        <?php endforeach; ?>
+		    </tbody>
+	    </table>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>

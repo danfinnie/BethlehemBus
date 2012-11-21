@@ -41,14 +41,24 @@ class TimeOfDay {
 	private function getHumanReadable() {
 		return sprintf('%d:%02d%s', $this->hour, $this->min, $this->ampm);
 	}
+
+	function __toString() {
+		return $this->getHumanReadable();
+	}
 }
 
 $data = json_decode(file_get_contents("data.json"), true);
 $data = $data['westbound'];
 
+$data = array_map(function($entry) {
+	$entry['departureTime'] = new TimeOfDay($entry['departureTime']);
+	$entry['arrivalTime'] = new TimeOfDay($entry['arrivalTime']);
+	return $entry;
+}, $data);
+
 usort($data, function($a, $b) {
-	$a = new TimeOfDay($a['departureTime']);
-	$b = new TimeOfDay($b['departureTime']);
+	$a = $a['departureTime'];
+	$b = $b['departureTime'];
 
 	return $a->compareNextOccurence($b);
 });

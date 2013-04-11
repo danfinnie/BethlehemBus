@@ -2,6 +2,8 @@
 
 date_default_timezone_set('America/New_York');
 
+ini_set("display_errors", 1);
+
 class TimeOfDay {
 	private $hour;
 	private $min;
@@ -32,14 +34,13 @@ class TimeOfDay {
 		}
 	}
 
-    // function isInPast() {
-       // $time = strtotime($this->getHumanReadable());
-
-    //}
+    function isInPast() {
+        return $this->time < time();
+    }
 
 	private function getNextOccurence() {
 		if($this->time < time()) {
-			return strtotime("+1 day", $today);
+			return strtotime("+1 day", $this->time);
 		} else {
 			return $this->time;
 		}
@@ -70,8 +71,11 @@ usort($data, function($a, $b) {
 	return $a->compareNextOccurence($b);
 });
 
-for ($i = 0; $i < 2; $i++) {
+$continue = true;
+while ($continue) {
 	array_unshift($data, array_pop($data));
+    $lastBus = end($data);
+    $continue = $lastBus->arrivalTime->isInPast();
 }
 
 ?><!DOCTYPE html>

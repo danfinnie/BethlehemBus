@@ -6,6 +6,7 @@ class TimeOfDay {
 	private $hour;
 	private $min;
 	private $ampm;
+    private $time;
 
 	function __construct($str) {
 		// var_dump($str);
@@ -14,6 +15,7 @@ class TimeOfDay {
 		$this->hour = intval($matches[1]);
 		$this->min = intval($matches[2]);
 		$this->ampm = $matches[3] . "m";
+        $this->time = strtotime($this->getHumanReadable());
 	}
 
 	// Returns true if the next instance of this TimeOfDay occurs before $other.
@@ -30,13 +32,16 @@ class TimeOfDay {
 		}
 	}
 
-	private function getNextOccurence() {
-		$today = strtotime($this->getHumanReadable());
+    // function isInPast() {
+       // $time = strtotime($this->getHumanReadable());
 
-		if($today < time()) {
+    //}
+
+	private function getNextOccurence() {
+		if($this->time < time()) {
 			return strtotime("+1 day", $today);
 		} else {
-			return $today;
+			return $this->time;
 		}
 	}
 

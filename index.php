@@ -49,18 +49,18 @@ class TimeOfDay {
 	}
 }
 
-$data = json_decode(file_get_contents("data.json"), true);
-$data = $data['westbound'];
+$data = json_decode(file_get_contents("data.json"));
+$data = $data->westbound;
 
 $data = array_map(function($entry) {
-	$entry['departureTime'] = new TimeOfDay($entry['departureTime']);
-	$entry['arrivalTime'] = new TimeOfDay($entry['arrivalTime']);
+	$entry->departureTime = new TimeOfDay($entry->departureTime);
+	$entry->arrivalTime = new TimeOfDay($entry->arrivalTime);
 	return $entry;
 }, $data);
 
 usort($data, function($a, $b) {
-	$a = $a['departureTime'];
-	$b = $b['departureTime'];
+	$a = $a->departureTime;
+	$b = $b->departureTime;
 
 	return $a->compareNextOccurence($b);
 });
@@ -106,11 +106,11 @@ for ($i = 0; $i < 2; $i++) {
         	<tbody>
 	        	<?php foreach($data as $i=>$row): ?>
 	        		<tr class="<?php echo $i < 2 ? "past" : ""?>">
-	        			<td><?= $row['company'] ?></td>
-	        			<td><?= $row['departureTime'] ?></td>
-	        			<td><?= $row['departureLocation'] ?></td>
-	        			<td><?= $row['arrivalTime'] ?></td>
-	        			<td><?= $row['arrivalLocation'] ?></td>
+	        			<td><?= $row->company ?></td>
+	        			<td><?= $row->departureTime ?></td>
+	        			<td><?= $row->departureLocation ?></td>
+	        			<td><?= $row->arrivalTime ?></td>
+	        			<td><?= $row->arrivalLocation ?></td>
 	        		</tr>
 		        <?php endforeach; ?>
 		    </tbody>
